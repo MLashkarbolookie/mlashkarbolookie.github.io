@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff9900;
+}
+
+.profile {
+  width: 150px;
+  float: left;
+  margin: 0 20px 20px 0;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #999;
+  font-size: 0.9em;
+}
