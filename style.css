@@ -39,7 +39,7 @@ footer {
 }
 
 .name-banner {
-  background-color: #e6f2ff; /* very light blue */
+background-color: rgba(173, 216, 230, 0.3); /* light blue with transparency */
   padding: 20px;
   border-radius: 6px;
   margin-bottom: 20px;
