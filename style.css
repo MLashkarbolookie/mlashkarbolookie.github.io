@@ -62,8 +62,7 @@ background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  object-fit: contain;
-  background-color: #fff; /* fills circle background if edges appear */
+  object-position: 50% 30%;
 
 }
 
