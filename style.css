@@ -69,14 +69,24 @@ background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
   margin-bottom: 20px;
 }
 
-.profile-pic {
-  width: 120px;
-  height: 120px;
+.profile-pic-container {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: 50% 30%;
-
+  overflow: hidden;            /* hides the image outside the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;         /* spacing from contact info */
 }
+
+.profile-pic {
+  width: 100%;
+  height: auto;                /* keeps natural proportions */
+  object-fit: cover;           /* fills the circle nicely */
+  object-position: center 30%; /* optional: adjust to center face */
+}
+
 
 .three-column {
   display: flex;
