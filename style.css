@@ -10,7 +10,7 @@ body {
   background: #ffffff;
 
   /* Centered column layout */
-  max-width: 800px;
+  max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
 
@@ -65,66 +65,26 @@ background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
   object-fit: cover;
 }
 
-/* --- 3-column layout --- */
 .three-column {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 40px; /* was 30px — increases spacing between columns */
   align-items: flex-start;
 }
 
-/* Column widths */
 .left-col {
   flex: 1;
-  max-width: 220px;
+  max-width: 250px; /* was 220px */
 }
 
 .center-col {
-  flex: 2;
+  flex: 2.2; /* slightly more space for bio */
 }
 
 .right-col {
   flex: 1;
-  max-width: 220px;
+  max-width: 250px; /* was 220px */
   background-color: rgba(173, 216, 230, 0.1);
   padding: 15px;
   border-radius: 6px;
-}
-
-/* Profile image styling */
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 15px auto;
-}
-
-/* Contact info styling */
-.contact-info {
-  text-align: center;
-  font-size: 0.95em;
-  line-height: 1.4;
-}
-
-/* Upcoming events section */
-.right-col h3 {
-  margin-top: 0;
-  font-family: 'Merriweather', serif;
-  font-size: 1.1em;
-  text-align: center;
-}
-
-/* Responsive stacking for small screens */
-@media (max-width: 900px) {
-  .three-column {
-    flex-direction: column;
-  }
-  .left-col, .center-col, .right-col {
-    max-width: 100%;
-  }
-  .right-col {
-    margin-top: 20px;
-  }
 }
