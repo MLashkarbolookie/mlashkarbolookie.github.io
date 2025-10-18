@@ -84,7 +84,7 @@ background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
   width: 100%;
   height: auto;                /* keeps natural proportions */
   object-fit: cover;           /* fills the circle nicely */
-  object-position: center 30%; /* optional: adjust to center face */
+ 
 }
 
 
