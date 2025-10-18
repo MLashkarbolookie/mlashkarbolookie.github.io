@@ -76,7 +76,7 @@ background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
 
 .left-col {
   flex: 1;
-  max-width: 250px; /* was 220px */
+  max-width: 200px; /* was 220px */
 }
 
 .center-col {
@@ -85,7 +85,7 @@ background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
 
 .right-col {
   flex: 1;
-  max-width: 250px; /* was 220px */
+  max-width: 200px; /* was 220px */
   background-color: rgba(173, 216, 230, 0.1);
   padding: 15px;
   border-radius: 6px;
