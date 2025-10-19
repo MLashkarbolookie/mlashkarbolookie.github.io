@@ -37,26 +37,16 @@ nav a:hover {
   color: #ff9900;
 }
 
-.profile-pic-container {
-  width: 150px;
-  height: 150px;
-  border-radius: 60%;
-  overflow: hidden;            /* crop image into circle */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.05); /* subtle border/shadow, optional */
-}
-
-
 .profile-pic {
-  width: 120%;
-  height: 120%;
-  object-fit: cover;
-  object-position: center 30%; /* adjust vertical framing if needed */
+  width: 100%;             /* makes it responsive to column width */
+  max-width: 180px;        /* limits how large it can get */
+  height: auto;            /* keeps natural proportions — no distortion */
+  border-radius: 8px;      /* soft rounded corners to match your cards */
   display: block;
+  margin-bottom: 15px;     /* spacing below the image */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
 }
+
 
 
 footer {
