@@ -69,23 +69,28 @@ footer {
   align-items: flex-start;
 }
 
+/* Left column */
 .left-col {
-  flex: 1;
-  max-width: 220px;
+  flex: 0 0 220px;            /* fixed width 220px */
   display: flex;
-  flex-direction: column; /* stack photo + contact vertically */
-  align-items: center;    /* center everything horizontally */
-  gap: 15px;              /* spacing between photo and contact */
+  flex-direction: column;      /* stack photo + contact vertically */
+  align-items: center;         /* center content horizontally */
+  gap: 15px;                   /* spacing between photo and contact */
 }
 
+/* Contact info */
 .contact-info {
-  text-align: center;     /* centers the email & LinkedIn inside the block */
+  text-align: center;          /* centers email & LinkedIn inside block */
 }
 
+/* Center column */
+.center-col {
+  flex: 1;                     /* takes remaining space */
+}
 
+/* Right column */
 .right-col {
-  flex: 1;
-  max-width: 220px;
+  flex: 0 0 220px;             /* fixed width 220px, same as left column */
   background-color: rgba(173, 216, 230, 0.1);
   padding: 15px;
   border-radius: 6px;
