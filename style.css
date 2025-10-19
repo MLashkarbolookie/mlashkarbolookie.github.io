@@ -49,7 +49,7 @@ nav a:hover {
 }
 
 .profile-pic {
-  width: 100%;
+  width: 80%;
   height: auto;                /* keeps natural proportions */
   object-fit: cover;           /* fills the circle nicely */
 
