@@ -94,3 +94,22 @@ background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
   margin-bottom: 10px;  /* space below the title */
   color: #003366;       /* consistent with your link color */
 }
+
+/* Stack columns vertically on screens smaller than 768px */
+@media (max-width: 768px) {
+  .three-column {
+    flex-direction: column;  /* stack columns */
+    gap: 20px;               /* add spacing between stacked columns */
+  }
+
+  .left-col,
+  .center-col,
+  .right-col {
+    max-width: 100%;         /* make each column full width */
+  }
+
+  /* Optional: add spacing for right column */
+  .right-col {
+    margin-top: 10px;
+  }
+}
