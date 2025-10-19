@@ -71,7 +71,7 @@ footer {
 
 .left-col {
   flex: 1;
-  max-width: 200px;
+  max-width: 220px;
   display: flex;
   flex-direction: column; /* stack photo + contact vertically */
   align-items: center;    /* center everything horizontally */
