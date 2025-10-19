@@ -73,14 +73,15 @@ footer {
   flex: 1;
   max-width: 200px;
   display: flex;
-  flex-direction: column;  /* stack items vertically */
-  align-items: center;     /* center horizontally */
-  gap: 10px;               /* optional: space between items */
+  flex-direction: column; /* stack photo + contact vertically */
+  align-items: center;    /* center everything horizontally */
+  gap: 15px;              /* spacing between photo and contact */
 }
 
-.center-col {
-  flex: 2.2;
+.contact-info {
+  text-align: center;     /* centers the email & LinkedIn inside the block */
 }
+
 
 .right-col {
   flex: 1;
