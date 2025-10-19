@@ -52,7 +52,7 @@ nav a:hover {
   width: 100%;
   height: auto;                /* keeps natural proportions */
   object-fit: cover;           /* fills the circle nicely */
-  object-position: center 30%; /* optional: adjust to center face */
+
 }
 
 footer {
