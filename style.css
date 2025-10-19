@@ -1,26 +1,23 @@
+/* Global styles */
 html {
   background-color: #f7f7f7; /* subtle background around content */
 }
 
 body {
+  width: 100%;              /* ensures it shrinks on small screens */
+  max-width: 1000px;        /* main content max width */
+  margin: 40px auto;
+  padding: 20px;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #222;
   background: #ffffff;
-
-  /* Centered column layout */
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-
-  /* Keep everything nicely contained */
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   border-radius: 8px;
 }
 
-
-
+/* Header & Navigation */
 header {
   text-align: center;
   margin-bottom: 30px;
@@ -37,18 +34,18 @@ nav a:hover {
   color: #ff9900;
 }
 
+/* Profile Picture */
 .profile-pic {
-  width: 100%;             /* makes it responsive to column width */
-  max-width: 180px;        /* limits how large it can get */
-  height: auto;            /* keeps natural proportions — no distortion */
-  border-radius: 8px;      /* soft rounded corners to match your cards */
+  width: 100%;             /* responsive to column width */
+  max-width: 180px;        /* limits max size */
+  height: auto;            /* keeps natural proportions */
+  border-radius: 8px;      /* soft rounded corners */
   display: block;
-  margin-bottom: 15px;     /* spacing below the image */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+  margin-bottom: 15px;     /* spacing below image */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-
+/* Footer */
 footer {
   text-align: center;
   margin-top: 40px;
@@ -56,59 +53,62 @@ footer {
   font-size: 0.9em;
 }
 
+/* Banner */
 .name-banner {
-background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
+  background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
   padding: 20px;
   border-radius: 6px;
   margin-bottom: 20px;
 }
 
-
-
+/* Three-column layout */
 .three-column {
   display: flex;
   justify-content: space-between;
-  gap: 40px; /* was 30px — increases spacing between columns */
+  gap: 40px; /* spacing between columns */
   align-items: flex-start;
 }
 
 .left-col {
   flex: 1;
-  max-width: 200px; /* was 220px */
+  max-width: 200px;
 }
 
 .center-col {
-  flex: 2.2; /* slightly more space for bio */
+  flex: 2.2;
 }
 
 .right-col {
   flex: 1;
-  max-width: 220px; /* was 220px */
+  max-width: 220px;
   background-color: rgba(173, 216, 230, 0.1);
   padding: 15px;
   border-radius: 6px;
 }
+
+/* Right-column title */
 .right-col h2 {
-  font-size: 1.1em;     /* smaller than default */
-  font-weight: 550;     /* slightly bold but not too heavy */
-  margin-bottom: 10px;  /* space below the title */
-  color: #003366;       /* consistent with your link color */
+  font-size: 1.1em;     
+  font-weight: 550;     
+  margin-bottom: 10px;
+  color: #003366;
 }
 
-/* Stack columns vertically on screens smaller than 768px */
+/* Responsive adjustments for tablets and phones */
 @media (max-width: 768px) {
   .three-column {
-    flex-direction: column;  /* stack columns */
-    gap: 20px;               /* add spacing between stacked columns */
+    flex-direction: column;  /* stack columns vertically */
+    gap: 20px;               /* spacing between stacked columns */
+    align-items: center;     /* center columns horizontally */
   }
 
   .left-col,
   .center-col,
   .right-col {
-    max-width: 100%;         /* make each column full width */
+    flex-basis: 100%;        /* full width */
+    max-width: 100%;
   }
 
-  /* Optional: add spacing for right column */
   .right-col {
     margin-top: 10px;
   }
