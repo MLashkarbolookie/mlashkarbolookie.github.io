@@ -89,8 +89,8 @@ background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
   border-radius: 6px;
 }
 .right-col h2 {
-  font-size: 1em;     /* smaller than default */
-  font-weight: 500;     /* slightly bold but not too heavy */
+  font-size: 1.1em;     /* smaller than default */
+  font-weight: 550;     /* slightly bold but not too heavy */
   margin-bottom: 10px;  /* space below the title */
   color: #003366;       /* consistent with your link color */
 }
