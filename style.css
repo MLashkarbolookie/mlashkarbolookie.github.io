@@ -38,8 +38,8 @@ nav a:hover {
 }
 
 .profile-pic-container {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   overflow: hidden;            /* hides the image outside the circle */
   display: flex;
@@ -49,7 +49,7 @@ nav a:hover {
 }
 
 .profile-pic {
-  width: 80%;
+  width: 60%;
   height: auto;                /* keeps natural proportions */
   object-fit: cover;           /* fills the circle nicely */
 
