@@ -69,23 +69,6 @@ background-color: rgba(173, 216, 230, 0.15); /* light blue at 15% opacity */
   margin-bottom: 20px;
 }
 
-.profile-pic-container {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;            /* hides the image outside the circle */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;         /* spacing from contact info */
-}
-
-.profile-pic {
-  width: 100%;
-  height: auto;                /* keeps natural proportions */
-  object-fit: cover;           /* fills the circle nicely */
- 
-}
 
 
 .three-column {
